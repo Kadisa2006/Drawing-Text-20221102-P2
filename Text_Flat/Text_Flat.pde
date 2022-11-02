@@ -1,7 +1,7 @@
 //Global Variables
 int appWidth, appHeight;
 float titleX, titleY, titleWidth, titleHeight;
-String title = "Wahoo!"
+String title = "Wahoo!";
 //
 size(500, 600); //Portrait
 //Copy Display Algorithm
@@ -16,6 +16,7 @@ titleHeight = appHeight * 1/10;
 //
 //Text Setup, single executing code
 //Fonts from the OS (Operating System)
-String[] fontList = PFont.list();
+String[] fontList = PFont.list(); //To list all fonts available
+printArray(fontList);
 //
 rect(titleX, titleY, titleWidth, titleHeight);
