@@ -6,7 +6,7 @@ int appWidth, appHeight, fontSize;
 float titleX, titleY, titleWidth, titleHeight;
 float footerX, footerY, footerWidth, footerHeight;
 String title = "Wahoo!", footer="Drip";
-PFont titleFont;
+PFont titleFont, footerFont;
 color purple=#2C08FF, resetDefaultInk=#FFFFFF; //not Night Mode Friendly
 //
 void setup()
@@ -52,6 +52,7 @@ void setup()
   String[] fontList = PFont.list(); //To list all fonts available
   printArray(fontList); //For listing all possible fonts to choose from, then createFont
   titleFont = createFont("Trebuchet MS Bold", 55); //Verified the font exists in Processing.JAVA
+  footerFont = createFont("Perpetua Italic", 55); //Verified the font exists in Processing.JAVA
   // Tools / Create Font / Find Font / Do not press "OK", known bug
   //
   //Layout or text space and typographical features
@@ -70,6 +71,7 @@ void draw() {
   text( title, titleX, titleY, titleWidth, titleHeight );
   textAlign(CENTER, BOTTOM);
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  textFont(footerFont, fontSize);
   text( footer, footerX, footerY, footerWidth, footerHeight );
   fill(resetDefaultInk);
 }//End draw
