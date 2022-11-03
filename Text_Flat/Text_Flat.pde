@@ -1,6 +1,6 @@
 //To Do List
 //Discussion about Font is too big (white space on top of font
-//Display Algorithm, see https://github.com/MercersKitchen/Sandbox-Hello-World220221017-P2/blob/main/Hello_World%20IfElse/Hello_World.pde
+//Display Algorithm, see https://github.com/Kadisa2006/Drawing-Text-20221102-P2/blob/main/Text_Flat/Text_Flat.pde
 
 //Global Variables
 int appWidth, appHeight, fontSize;
