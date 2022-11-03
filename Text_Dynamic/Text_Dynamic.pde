@@ -1,5 +1,4 @@
 //To Do List
-//Discussion about Font is too big (white space on top of font
 //Display Algorithm, see https://github.com/Kadisa2006/Drawing-Text-20221102-P2/blob/main/Text_Flat/Text_Flat.pde
 
 //Global Variables
@@ -10,6 +9,15 @@ String title = "Wahoo!", footer="Drip";
 PFont titleFont;
 color purple=#2C08FF, resetDefaultInk=#FFFFFF; //not Night Mode Friendly
 //
+void setup() {}//End setup
+//
+void draw() {}//End draw
+//
+void keyPressed() {}//End keyPressed
+//
+void mousePressed() {}//End mousePressed
+//
+//End Main Program
 size(500, 600); //Portrait
 //Copy Display Algorithm
 appWidth = width;
@@ -40,5 +48,7 @@ textAlign(CENTER, CENTER);
 fontSize = 50; //Largest size given window
 textFont(titleFont, fontSize);
 text( title, titleX, titleY, titleWidth, titleHeight );
+textAlign(CENTER, BOTTOM);
+//Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
 text( footer, footerX, footerY, footerWidth, footerHeight );
 fill(resetDefaultInk);
